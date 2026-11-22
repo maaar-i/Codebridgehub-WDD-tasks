@@ -1,0 +1,2231 @@
+
+/* GENERAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #202633;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 7%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 800;
+    color: #23418c;
+}
+
+.logo span {
+    color: #e58b54;
+}
+
+.nav-container nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-container nav a {
+    text-decoration: none;
+    color: #343b48;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-container nav a:hover {
+    color: #294a9b;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    width: 100%;
+    min-height: 280px;
+    background-color: #f3f5fa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #202633;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #304f9c;
+}
+
+.hero p {
+    max-width: 620px;
+    margin: 0 auto 22px;
+
+    font-size: 14px;
+    line-height: 1.8;
+    color: #737b89;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 23px;
+    border-radius: 4px;
+
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #29499a;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d3678;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #303b50;
+    border: 1px solid #e2e5ec;
+}
+
+.btn-secondary:hover {
+    background-color: #e9edf7;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-container nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 260px;
+        padding: 45px 18px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .nav-container nav {
+        gap: 9px;
+    }
+
+    .nav-container nav a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+}
+
+
+/* =================================
+   SECTION 2: TRAINING PROGRAMS
+================================== */
+
+.programs-section {
+    width: 100%;
+    padding: 65px 7%;
+    background-color: #ffffff;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #202633;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #858b96;
+}
+
+
+/* PROGRAMS GRID */
+
+.programs-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* COURSE CARDS */
+
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #edf0f4;
+    border-radius: 5px;
+
+    padding: 20px 17px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(25, 48, 95, 0.08);
+    border-color: #dce3f1;
+}
+
+
+/* COURSE TITLE */
+
+.course-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #202633;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+
+/* COURSE CATEGORY TAGS */
+
+.course-tags {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 12px;
+
+    font-size: 10px;
+    color: #858b96;
+}
+
+.course-tags .tag {
+    background-color: #e7f5ec;
+    color: #3b9660;
+
+    padding: 3px 9px;
+    border-radius: 20px;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* COURSE DESCRIPTION */
+
+.course-description {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #747b87;
+
+    margin-bottom: 17px;
+    min-height: 60px;
+}
+
+
+/* COURSE DETAILS */
+
+.course-card h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #333b49;
+    margin-bottom: 9px;
+}
+
+.course-details {
+    list-style: none;
+    margin-bottom: 17px;
+}
+
+.course-details li {
+    position: relative;
+    padding-left: 13px;
+
+    font-size: 10px;
+    color: #747b87;
+    line-height: 1.9;
+}
+
+.course-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3153a1;
+    font-weight: bold;
+}
+
+
+/* COURSE PRICE AND DETAILS */
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 10px;
+    border-top: 1px solid #f0f1f4;
+
+    margin-top: auto;
+}
+
+.course-info span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #29499a;
+}
+
+.course-info small {
+    font-size: 9px;
+    color: #8b909a;
+}
+
+
+/* COURSE FOOTER */
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 9px 0 13px;
+
+    font-size: 9px;
+    color: #858b96;
+}
+
+
+/* ENROLMENT BUTTON */
+
+.course-button {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #29499a;
+    color: #ffffff;
+
+    padding: 10px;
+    border-radius: 3px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.course-button:hover {
+    background-color: #1b367b;
+}
+
+
+/* VIEW ALL PROGRAMS BUTTON */
+
+.all-programs {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.all-programs .btn {
+    font-size: 11px;
+    padding: 11px 25px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .programs-section {
+        padding: 55px 5%;
+    }
+
+    .programs-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .programs-section {
+        padding: 45px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .section-heading p {
+        font-size: 11px;
+    }
+
+    .programs-container {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .course-card {
+        padding: 20px;
+    }
+
+    .course-card h3 {
+        font-size: 15px;
+    }
+
+    .course-description {
+        min-height: auto;
+        font-size: 12px;
+    }
+
+    .course-details li {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =================================
+   SECTION 3: LEARNING EXPERIENCE
+================================== */
+
+.experience-section {
+    width: 100%;
+    padding: 65px 7%;
+    background-color: #f5f9fc;
+}
+
+
+/* SECTION HEADING */
+
+.experience-heading {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.experience-heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #202633;
+    margin-bottom: 10px;
+}
+
+.experience-heading p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #858b96;
+}
+
+
+/* EXPERIENCE GRID */
+
+.experience-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 35px;
+    row-gap: 40px;
+}
+
+
+/* MAIN EXPERIENCE CARDS */
+
+.experience-card {
+    padding: 5px;
+    background-color: transparent;
+}
+
+
+/* FEATURE TITLE AREA */
+
+.experience-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 22px;
+}
+
+
+/* MAIN ICON */
+
+.experience-icon {
+    min-width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e7edfa;
+    border-radius: 50%;
+
+    color: #29499a;
+    font-size: 19px;
+}
+
+
+/* MAIN FEATURE HEADING */
+
+.experience-title h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #202633;
+    margin-bottom: 7px;
+}
+
+.experience-title p {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #777f8c;
+}
+
+
+/* SMALL FEATURE GRID */
+
+.experience-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 15px;
+    row-gap: 20px;
+
+    padding-left: 48px;
+}
+
+
+/* INDIVIDUAL SMALL FEATURES */
+
+.mini-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+
+/* SMALL FEATURE ICON */
+
+.mini-icon {
+    min-width: 15px;
+
+    color: #344f91;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* SMALL FEATURE TEXT */
+
+.mini-feature h4 {
+    font-size: 10px;
+    font-weight: 700;
+    color: #303947;
+    margin-bottom: 5px;
+}
+
+.mini-feature p {
+    font-size: 9px;
+    line-height: 1.7;
+    color: #858b96;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .experience-section {
+        padding: 55px 5%;
+    }
+
+    .experience-container {
+        column-gap: 20px;
+        row-gap: 35px;
+    }
+
+    .experience-features {
+        padding-left: 35px;
+        column-gap: 10px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .experience-section {
+        padding: 45px 6%;
+    }
+
+    .experience-heading {
+        margin-bottom: 35px;
+    }
+
+    .experience-heading h2 {
+        font-size: 22px;
+    }
+
+    .experience-heading p {
+        font-size: 11px;
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr;
+        row-gap: 35px;
+    }
+
+    .experience-title {
+        gap: 12px;
+    }
+
+    .experience-title h3 {
+        font-size: 14px;
+    }
+
+    .experience-title p {
+        font-size: 11px;
+    }
+
+    .experience-features {
+        padding-left: 45px;
+        column-gap: 12px;
+        row-gap: 18px;
+    }
+
+    .mini-feature h4 {
+        font-size: 10px;
+    }
+
+    .mini-feature p {
+        font-size: 9px;
+    }
+
+}
+
+
+/* TESTIMONIAL CAROUSEL SLIDING */
+
+.testimonial-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    gap: 16px;
+}
+
+.testimonial-track::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    flex: 0 0 calc((100% - 48px) / 4);
+    scroll-snap-align: start;
+    min-width: 0;
+}
+
+
+/* TABLET CAROUSEL */
+
+@media (max-width: 900px) {
+
+    .testimonial-card {
+        flex: 0 0 calc((100% - 16px) / 2);
+    }
+
+}
+
+
+/* MOBILE CAROUSEL */
+
+@media (max-width: 600px) {
+
+    .testimonial-card {
+        flex: 0 0 100%;
+    }
+
+}
+
+
+/* =================================
+   SECTION 4: STUDENT TESTIMONIALS
+================================== */
+
+.testimonials-section {
+    width: 100%;
+    padding: 65px 7%;
+    background-color: #ffffff;
+}
+
+
+/* SECTION HEADING */
+
+.testimonials-heading {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.testimonials-heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #202633;
+    margin-bottom: 10px;
+}
+
+.testimonials-heading p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #858b96;
+}
+
+
+/* TESTIMONIAL CONTAINER */
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+/* TESTIMONIAL CARDS */
+
+.testimonial-card {
+    background-color: #ffffff;
+    border: 1px solid #edf0f4;
+    border-radius: 5px;
+
+    padding: 20px 16px;
+
+    min-height: 210px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(30, 50, 90, 0.07);
+}
+
+
+/* QUOTATION MARK */
+
+.quote-icon {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+
+    color: #dce5f8;
+
+    margin-bottom: 8px;
+}
+
+
+/* TESTIMONIAL TEXT */
+
+.testimonial-text {
+    font-size: 10px;
+    line-height: 1.9;
+    color: #707987;
+
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+
+/* STAR RATINGS */
+
+.testimonial-rating {
+    color: #e9b949;
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    margin-bottom: 13px;
+}
+
+
+/* STUDENT INFORMATION */
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding-top: 11px;
+    border-top: 1px solid #f0f1f4;
+}
+
+
+/* STUDENT AVATAR */
+
+.student-avatar {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #e9eef9;
+    color: #29499a;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* STUDENT DETAILS */
+
+.student-details h4 {
+    font-size: 10px;
+    font-weight: 700;
+    color: #303947;
+
+    margin-bottom: 3px;
+}
+
+.student-details span {
+    font-size: 8px;
+    color: #9298a3;
+}
+
+
+/* NAVIGATION INDICATORS */
+
+.testimonial-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 25px;
+}
+
+.indicator {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #d9dee8;
+}
+
+.indicator.active {
+    width: 19px;
+    border-radius: 10px;
+    background-color: #29499a;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .testimonials-section {
+        padding: 55px 5%;
+    }
+
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .testimonials-section {
+        padding: 45px 6%;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 22px;
+    }
+
+    .testimonials-heading p {
+        font-size: 11px;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .testimonial-card {
+        min-height: 190px;
+        padding: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =================================
+   SECTION 5: PERSONAL TRAINING
+================================== */
+
+.personal-training-section {
+    width: 100%;
+    padding: 65px 7%;
+    background-color: #f5f8fc;
+}
+
+
+/* SECTION HEADING */
+
+.personal-training-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.personal-training-heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #202633;
+    margin-bottom: 10px;
+}
+
+.personal-training-heading p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #858b96;
+}
+
+
+/* MAIN TWO COLUMN CONTAINER */
+
+.personal-training-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 55px;
+}
+
+
+/* =================================
+   LEFT COLUMN: TRAINING BENEFITS
+================================== */
+
+.training-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* INDIVIDUAL BENEFIT */
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+
+/* BENEFIT ICON */
+
+.benefit-icon {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e6edf9;
+    border-radius: 50%;
+
+    color: #29499a;
+    font-size: 17px;
+}
+
+
+/* BENEFIT TEXT */
+
+.benefit-content h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #303947;
+
+    margin-bottom: 6px;
+}
+
+.benefit-content p {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #858b96;
+
+    max-width: 420px;
+}
+
+
+/* =================================
+   RIGHT COLUMN: QUOTE FORM
+================================== */
+
+.training-quote-card {
+    background-color: #ffffff;
+
+    padding: 28px;
+    border: 1px solid #edf0f4;
+    border-radius: 6px;
+
+    box-shadow: 0 5px 20px rgba(30, 50, 90, 0.04);
+}
+
+
+/* FORM HEADING */
+
+.training-quote-card h3 {
+    text-align: center;
+
+    font-size: 17px;
+    font-weight: 800;
+    color: #202633;
+
+    margin-bottom: 8px;
+}
+
+.quote-description {
+    text-align: center;
+
+    font-size: 10px;
+    line-height: 1.7;
+    color: #858b96;
+
+    margin-bottom: 22px;
+}
+
+
+/* FORM GROUPS */
+
+.training-quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+/* FORM LABELS */
+
+.form-group label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #444d5b;
+}
+
+
+/* INPUT FIELDS */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 39px;
+
+    padding: 0 12px;
+
+    border: 1px solid #e3e7ee;
+    border-radius: 4px;
+
+    background-color: #ffffff;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #444d5b;
+
+    outline: none;
+    transition: 0.3s ease;
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder {
+    color: #a5aab3;
+}
+
+
+/* INPUT FOCUS EFFECT */
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #29499a;
+    box-shadow: 0 0 0 2px rgba(41, 73, 154, 0.08);
+}
+
+
+/* SUBMIT BUTTON */
+
+.quote-submit-button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #29499a;
+    color: #ffffff;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.quote-submit-button:hover {
+    background-color: #1b367b;
+}
+
+
+/* FORM NOTE */
+
+.form-note {
+    text-align: center;
+
+    font-size: 9px;
+    line-height: 1.7;
+    color: #9298a3;
+
+    margin-top: 2px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .personal-training-section {
+        padding: 55px 5%;
+    }
+
+    .personal-training-container {
+        gap: 30px;
+    }
+
+    .training-quote-card {
+        padding: 22px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .personal-training-section {
+        padding: 45px 6%;
+    }
+
+    .personal-training-heading h2 {
+        font-size: 22px;
+    }
+
+    .personal-training-heading p {
+        font-size: 11px;
+    }
+
+    .personal-training-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .training-benefits {
+        gap: 22px;
+    }
+
+    .benefit-content h3 {
+        font-size: 12px;
+    }
+
+    .benefit-content p {
+        font-size: 10px;
+    }
+
+    .training-quote-card {
+        padding: 22px 18px;
+    }
+
+    .training-quote-card h3 {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =================================
+   SECTION 6: SKILL ASSESSMENT
+================================== */
+
+.skill-assessment-section {
+    width: 100%;
+    padding: 65px 7%;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MAIN CONTENT */
+
+.skill-assessment-content {
+    max-width: 750px;
+    width: 100%;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* HEADING */
+
+.skill-assessment-content h2 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.5;
+
+    color: #202633;
+
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.skill-assessment-content p {
+    max-width: 620px;
+
+    margin: 0 auto 25px;
+
+    font-size: 12px;
+    line-height: 1.9;
+
+    color: #858b96;
+}
+
+
+/* ASSESSMENT BUTTON */
+
+.assessment-button {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background-color: #29499a;
+    color: #ffffff;
+
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.assessment-button:hover {
+    background-color: #1b367b;
+}
+
+
+/* ALTERNATIVE LINK */
+
+.assessment-alternative {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 5px;
+
+    margin-top: 18px;
+
+    font-size: 10px;
+    color: #858b96;
+}
+
+.assessment-alternative a {
+    color: #29499a;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.assessment-alternative a:hover {
+    color: #1b367b;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .skill-assessment-section {
+        padding: 55px 5%;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .skill-assessment-section {
+        padding: 45px 6%;
+    }
+
+    .skill-assessment-content h2 {
+        font-size: 21px;
+    }
+
+    .skill-assessment-content p {
+        font-size: 11px;
+    }
+
+    .assessment-button {
+        padding: 12px 22px;
+    }
+
+    .assessment-alternative {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =================================
+   SECTION 7: WHY CHOOSE US
+================================== */
+
+.why-choose-section {
+    width: 100%;
+    padding: 65px 7%;
+    background-color: #f5f8fc;
+}
+
+
+/* SECTION HEADING */
+
+.why-choose-heading {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.why-choose-heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #202633;
+    margin-bottom: 10px;
+}
+
+.why-choose-heading p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #858b96;
+}
+
+
+/* BENEFIT CARDS CONTAINER */
+
+.why-choose-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+/* INDIVIDUAL CARDS */
+
+.why-choose-card {
+    background-color: #ffffff;
+
+    border: 1px solid #edf0f4;
+    border-radius: 5px;
+
+    padding: 25px 18px;
+
+    min-height: 175px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.3s ease;
+}
+
+
+/* CARD HOVER EFFECT */
+
+.why-choose-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 22px rgba(25, 48, 95, 0.07);
+
+    border-color: #dce3f1;
+}
+
+
+/* CARD ICON */
+
+.why-choose-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e9eef9;
+    border-radius: 50%;
+
+    color: #29499a;
+    font-size: 19px;
+
+    margin-bottom: 13px;
+}
+
+
+/* CARD HEADING */
+
+.why-choose-card h3 {
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #303947;
+
+    margin-bottom: 9px;
+}
+
+
+/* CARD DESCRIPTION */
+
+.why-choose-card p {
+    font-size: 10px;
+    line-height: 1.8;
+
+    color: #858b96;
+
+    max-width: 230px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .why-choose-section {
+        padding: 55px 5%;
+    }
+
+    .why-choose-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .why-choose-section {
+        padding: 45px 6%;
+    }
+
+    .why-choose-heading h2 {
+        font-size: 22px;
+    }
+
+    .why-choose-heading p {
+        font-size: 11px;
+    }
+
+    .why-choose-container {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .why-choose-card {
+        min-height: 155px;
+        padding: 22px 18px;
+    }
+
+    .why-choose-card h3 {
+        font-size: 13px;
+    }
+
+    .why-choose-card p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =================================
+   SECTION 8: WEBSITE STATISTICS
+================================== */
+
+.statistics-section {
+    width: 100%;
+    padding: 45px 7%;
+    background-color: #ffffff;
+}
+
+
+/* STATISTICS CONTAINER */
+
+.statistics-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+    text-align: center;
+
+    gap: 20px;
+}
+
+
+/* INDIVIDUAL STATISTIC */
+
+.statistic-item {
+    padding: 10px;
+}
+
+
+/* STATISTIC NUMBERS */
+
+.statistic-item h2 {
+    font-size: 30px;
+    font-weight: 800;
+
+    color: #29499a;
+
+    margin-bottom: 7px;
+}
+
+
+/* NUMBER SYMBOLS */
+
+.statistic-item h2 span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* STATISTIC LABELS */
+
+.statistic-item p {
+    font-size: 10px;
+    font-weight: 500;
+
+    color: #858b96;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .statistics-section {
+        padding: 40px 5%;
+    }
+
+    .statistics-container {
+        gap: 15px;
+    }
+
+    .statistic-item h2 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .statistics-section {
+        padding: 35px 6%;
+    }
+
+    .statistics-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+    }
+
+    .statistic-item h2 {
+        font-size: 25px;
+    }
+
+    .statistic-item h2 span {
+        font-size: 21px;
+    }
+
+    .statistic-item p {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =================================
+   SECTION 9: FINAL CALL TO ACTION
+================================== */
+
+.final-cta-section {
+    width: 100%;
+    padding: 65px 7%;
+
+    background-color: #f5f8fc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MAIN CONTENT */
+
+.final-cta-content {
+    max-width: 750px;
+    width: 100%;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* SECTION HEADING */
+
+.final-cta-content h2 {
+    font-size: 26px;
+    font-weight: 800;
+
+    color: #202633;
+
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.final-cta-content p {
+    max-width: 620px;
+
+    margin: 0 auto 25px;
+
+    font-size: 12px;
+    line-height: 1.9;
+
+    color: #858b96;
+}
+
+
+/* CTA BUTTON CONTAINER */
+
+.final-cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+/* PRIMARY BUTTON */
+
+.cta-primary-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #29499a;
+    color: #ffffff;
+
+    border: 1px solid #29499a;
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.cta-primary-button:hover {
+    background-color: #1b367b;
+    border-color: #1b367b;
+}
+
+
+/* SECONDARY BUTTON */
+
+.cta-secondary-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #ffffff;
+    color: #29499a;
+
+    border: 1px solid #29499a;
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.cta-secondary-button:hover {
+    background-color: #e9eef9;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .final-cta-section {
+        padding: 55px 5%;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .final-cta-section {
+        padding: 45px 6%;
+    }
+
+    .final-cta-content h2 {
+        font-size: 22px;
+    }
+
+    .final-cta-content p {
+        font-size: 11px;
+    }
+
+    .final-cta-buttons {
+        gap: 10px;
+    }
+
+    .cta-primary-button,
+    .cta-secondary-button {
+        padding: 11px 18px;
+        font-size: 10px;
+    }
+
+}
+
+
+/* =================================
+   SECTION 10: WEBSITE FOOTER
+================================== */
+
+.website-footer {
+    width: 100%;
+    padding: 55px 7% 0;
+    background-color: #ffffff;
+    border-top: 1px solid #edf0f4;
+}
+
+
+/* MAIN FOOTER CONTAINER */
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+
+    gap: 40px;
+
+    padding-bottom: 40px;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* BRAND LOGO */
+
+.footer-logo {
+    display: inline-block;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    margin-bottom: 15px;
+}
+
+.logo-codebridge {
+    color: #29499a;
+}
+
+.logo-hub {
+    color: #e99b58;
+}
+
+
+/* BRAND DESCRIPTION */
+
+.footer-description {
+    max-width: 260px;
+
+    font-size: 10px;
+    line-height: 1.9;
+
+    color: #858b96;
+
+    margin-bottom: 18px;
+}
+
+
+/* SOCIAL MEDIA */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer-socials a {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #f0f3f9;
+    color: #29499a;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background-color: #29499a;
+    color: #ffffff;
+}
+
+
+/* FOOTER COLUMN HEADINGS */
+
+.footer-column h3 {
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #202633;
+
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-links {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links li a {
+    font-size: 10px;
+    color: #858b96;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #29499a;
+    padding-left: 3px;
+}
+
+
+/* =================================
+   CONTACT INFORMATION
+================================== */
+
+.contact-details {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+/* CONTACT ICON */
+
+.contact-icon {
+    width: 27px;
+    height: 27px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f0f3f9;
+    color: #29499a;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+}
+
+
+/* CONTACT TEXT */
+
+.contact-details li div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-label {
+    font-size: 9px;
+    font-weight: 600;
+    color: #303947;
+}
+
+.contact-details li a,
+.contact-details li p {
+    font-size: 9px;
+    line-height: 1.7;
+
+    color: #858b96;
+
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-details li a:hover {
+    color: #29499a;
+}
+
+
+/* =================================
+   FOOTER BOTTOM
+================================== */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 18px 0;
+
+    border-top: 1px solid #edf0f4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.footer-bottom p {
+    font-size: 9px;
+    color: #9298a3;
+}
+
+
+/* BACK TO TOP */
+
+.back-to-top {
+    font-size: 9px;
+    font-weight: 600;
+
+    color: #29499a;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+    color: #1b367b;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================== */
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .website-footer {
+        padding: 45px 5% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .website-footer {
+        padding: 40px 6% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-description {
+        max-width: 300px;
+    }
+
+    .footer-column h3 {
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+
+    .footer-links li a {
+        font-size: 9px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
